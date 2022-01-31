@@ -17,11 +17,14 @@
 }
 
 @font-face {
-    font-family: 'Lovelo Black';
+    font-family: 'Lovelo';
+    src: local('Lovelo Black'), local('Lovelo-Black'),
+        url('fonts/Lovelo-Black.woff2') format('woff2'),
+        url('fonts/Lovelo-Black.woff') format('woff'),
+        url('fonts/Lovelo-Black.ttf') format('truetype');
+    font-weight: 900;
     font-style: normal;
-    font-weight: normal;
-    src: local('Lovelo Black'), url('fonts/Lovelo-Black.woff') format('woff');
-}
+  }
 
 
 /* FONTS END */
