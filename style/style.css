@@ -179,7 +179,7 @@ svg:not(:root) {
 }
 
 .homepage {
-    background-image: url('/images/backgrounds/Homepage.svg');
+    background-image: url('../images/backgrounds/Homepage.svg');
     height: 100vh;
     width: 100vw;
     background-repeat: no-repeat;
@@ -194,7 +194,7 @@ footer {
     width: 100vw;
     margin: 0 auto;
     height: 100vh;
-    background-image: url('/images/backgrounds/Footer.svg');
+    background-image: url('../images/backgrounds/Footer.svg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -451,7 +451,7 @@ footer {
     background-size: contain;
     height: auto;
     padding-bottom: 200px;
-    background: url('/images/backgrounds/Pages.svg');
+    background: url('../images/backgrounds/Pages.svg');
 }
 
 .vault__container {
@@ -618,13 +618,13 @@ footer {
 
 .services__services {
     height: 100vh;
-    background: url('/images/backgrounds/Pages.svg');
+    background: url('../images/backgrounds/Pages.svg');
     background-size: cover;
 }
 
 .services__about {
     height: 100vh;
-    background: url('/images/backgrounds/Pages.svg');
+    background: url('../images/backgrounds/Pages.svg');
     background-size: cover;
 }
 
