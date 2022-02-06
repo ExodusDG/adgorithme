@@ -190,8 +190,8 @@ function sliderPrev() {
         $('.partners__slider_wrapper').attr('style', 'transform: translateX(-' + translateWidth + '%)')
     }
 }
-
-/* PARTNERS PAGE SLIDER */
+console.log($('body').width() + ' | ' + $('body').height())
+    /* PARTNERS PAGE SLIDER */
 
 $('.partners__slider_item').click(function() {
     var clickedPartner = $(this).attr('id');

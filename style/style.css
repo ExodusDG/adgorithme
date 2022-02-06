@@ -679,7 +679,9 @@ footer {
     position: relative;
     top: 90px;
     text-align: left;
+    width: 450px;
     transition: 0.3s;
+    padding-left: 40px;
 }
 
 .services__info_title {
@@ -710,6 +712,7 @@ footer {
     color: #EE2700;
     width: 80%;
     margin-top: 20px;
+    text-transform: none;
 }
 
 .card__red {
@@ -725,6 +728,8 @@ footer {
     position: relative;
     top: 90px;
     transition: 0.2s;
+    width: 320px;
+    margin: 0 auto;
 }
 
 .services__card_content p {
@@ -1282,4 +1287,218 @@ footer {
     color: #FFFFFF;
     cursor: pointer;
     margin-bottom: 20px;
+}
+
+
+/******************/
+
+
+/******************/
+
+
+/**** BUTTON 1 ****/
+
+.toggle-button {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100%/3);
+    overflow: hidden;
+    justify-content: space-between;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.cubeshape {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    height: 320px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.cube {
+    -webkit-transition: -webkit-transform .5s;
+    transition: transform .5s;
+    /* Animate the transform properties */
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.first_cube,
+.second_cube {
+    height: 320px;
+    min-width: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.first_cube {
+    -webkit-transform: translateZ(-220px);
+    transform: translateZ(-220px);
+}
+
+.second_cube {
+    margin-top: -2px;
+    -webkit-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+}
+
+.cube:hover {
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+}
+
+.red_cube {
+    background: #ee28007e;
+}
+
+@media (max-width: 1600px) {
+    .cubeshape {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        height: 250px;
+    }
+    .first_cube,
+    .second_cube {
+        height: 250px;
+        min-width: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .toggle-button {
+        width: 30%;
+        overflow: hidden;
+    }
+    .services__body {
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+}
+
+@media (max-height: 768px) {
+    .first_cube,
+    .second_cube {
+        height: 200px;
+    }
+    .cubeshape {
+        height: 200px;
+    }
+    .services__body {
+        width: 80%;
+    }
+    .services__card_content {
+        position: relative;
+        top: 40px;
+        transition: 0.2s;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .services__card_content img {
+        width: 60px;
+    }
+    .services__card_content p {
+        font-size: 26px;
+        line-height: 112.5%;
+        letter-spacing: 0.045em;
+        color: #FFFFFF;
+        margin-top: 20px;
+    }
+    .services__info_card {
+        top: 40px;
+        width: 100%;
+    }
+    .services__info_title {
+        font-size: 32px;
+    }
+    .services__info_subtitle {
+        font-size: 16px;
+    }
+    .services__info_desc {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .scrollbar__page {
+        top: 95px;
+        right: 70px;
+        font-size: 22px;
+    }
+    .about__body_block img {
+        width: 200px;
+    }
+    .about__left {
+        left: 250px;
+        top: 50px;
+    }
+    .about__right {
+        right: 315px;
+        bottom: 100px;
+        text-align: right;
+    }
+    .values__logo_top {
+        width: 230px;
+    }
+    .values__logo_bottom {
+        width: 230px;
+    }
+    .values_top_items {
+        top: 35%;
+    }
+    .values__item_title {
+        font-size: 32px;
+    }
+    .values__item_subtitle {
+        font-size: 16px;
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 80%;
+    }
+    .footer__container {
+        max-width: 80%;
+    }
+    .footer__title {
+        font-size: 58px;
+    }
+    .footer__slogan {
+        font-size: 22px;
+    }
+    .footer__right_title {
+        font-size: 32px;
+        color: #EE2700;
+    }
+    .footer_form_block input {
+        width: 43%;
+        height: 40px;
+        font-size: 18px;
+    }
+    .footer__form_send {
+        width: 240px;
+        height: 40px;
+        font-size: 22px;
+        border: 2px solid transparent;
+    }
+    .footer__content {
+        margin-top: 150px;
+    }
+    .menu__item a {
+        font-size: 58px;
+    }
+    .header__logo {
+        position: relative;
+        width: 180px;
+        height: 46px;
+        transform: scale(0.9);
+    }
+    .homepage_menu_list {
+        top: 110px;
+    }
+    .partners__image img {
+        width: 700px;
+    }
+    .partners__company_body {
+        top: 50px;
+    }
 }
