@@ -1988,7 +1988,7 @@ footer {
         justify-content: center;
     }
     .services__slider {
-        overflow: scroll;
+        overflow-y: scroll;
     }
 }
 

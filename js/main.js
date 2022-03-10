@@ -42,11 +42,16 @@ window.addEventListener("mousewheel", function(e) {
     wDelta = e.wheelDelta < 0 ? 'down' : 'up';
     if (isActive == true) {
         if (wDelta == 'down') {
-            scrollRight()
-            servicesDown()
+            if (bodyWidth > 600) {
+                scrollRight()
+                servicesDown()
+            }
+
         } else {
-            scrollLeft()
-            servicesUp()
+            if (bodyWidth > 600) {
+                scrollLeft()
+                servicesUp()
+            }
         }
     } else {
         return false;
