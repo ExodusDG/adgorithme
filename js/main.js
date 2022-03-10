@@ -36,8 +36,9 @@ function updateVideo(videoName) {
 /* HOMEPAGE */
 
 var isActive = true;
-
+var bodyWidth = $('body').width()
 window.addEventListener("mousewheel", function(e) {
+
     wDelta = e.wheelDelta < 0 ? 'down' : 'up';
     if (isActive == true) {
         if (wDelta == 'down') {
