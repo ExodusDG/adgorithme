@@ -1990,6 +1990,9 @@ footer {
     .services__slider {
         overflow-y: scroll;
     }
+    .homepage__wrapper {
+        display: block;
+    }
 }
 
 @media (max-width: 490px) {
