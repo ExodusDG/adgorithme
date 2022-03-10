@@ -190,6 +190,10 @@ svg:not(:root) {
     color: #ED2A24;
 }
 
+.about__body_text_mb {
+    display: none;
+}
+
 .menu__item {
     position: relative;
     right: 10px;
@@ -273,6 +277,14 @@ footer {
 
 .footer__contacts {
     display: flex;
+}
+
+.partners__company_media {
+    width: 50%;
+}
+
+.partners__image img {
+    width: 100%;
 }
 
 .footer__contact {
@@ -1247,7 +1259,7 @@ footer {
 }
 
 .partners__company_body {
-    top: 100px;
+    top: 50px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -1530,6 +1542,15 @@ footer {
     }
 }
 
+@media (max-width: 1366px) {
+    .partners__image {
+        width: 100%;
+    }
+    .partners__image img {
+        width: 100%;
+    }
+}
+
 @media (max-width: 1240px) {
     .about__body {
         width: 80%;
@@ -1705,6 +1726,30 @@ footer {
         width: 90%;
         margin-top: 10px;
     }
+    .partners__company_body {
+        display: block;
+    }
+    .partners__company_bg img {
+        width: 70vw;
+        opacity: 0.4;
+    }
+    .partners__company_media {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer__left {
+        display: block;
+    }
+    .partners__company_info {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .partners__companies {
+        background: black;
+    }
+    .footer__form_send {
+        margin-bottom: 100px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1738,6 +1783,9 @@ footer {
     }
     .footer__left {
         width: 100%;
+    }
+    .partners__company_bg img {
+        width: 100vw;
     }
 }
 
@@ -1925,9 +1973,29 @@ footer {
         width: 100%;
         font-size: 14px;
     }
+    .partners__company_info {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .partners__company_media {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .footer__contacts {
+        width: 60%;
+    }
+    .footer__lines {
+        justify-content: center;
+    }
+    .services__slider {
+        overflow: scroll;
+    }
 }
 
 @media (max-width: 490px) {
+    .about__body_text_mb {
+        display: block;
+    }
     .footer__slogan {
         text-align: center;
     }
@@ -1955,6 +2023,14 @@ footer {
     }
     .footer__right {
         margin-top: 30px;
+    }
+    .partners__company_bg img {
+        width: 70vw;
+        opacity: 0.2;
+    }
+    .partners__button {
+        right: 20px;
+        bottom: 20px;
     }
 }
 
@@ -1985,6 +2061,13 @@ footer {
     }
     .footer__content {
         margin-top: 70px;
+    }
+    .partners__services_item {
+        margin-right: 0px;
+        width: 40px;
+    }
+    .partners__services {
+        justify-content: space-between;
     }
 }
 
