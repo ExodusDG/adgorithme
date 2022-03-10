@@ -2072,6 +2072,12 @@ footer {
     .partners__services {
         justify-content: space-between;
     }
+    .menu__item a {
+        font-size: 43px;
+    }
+    .header__logo {
+        left: 10px;
+    }
 }
 
 @media (max-width: 414px) {
