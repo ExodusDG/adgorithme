@@ -478,6 +478,18 @@ footer {
     transition-timing-function: cubic-bezier(1, 0.01, 0.31, 0.98);
 }
 
+.swiper-slide {
+    height: 250px !important;
+}
+
+.services__card_content {
+    top: 50px !important;
+}
+
+.services__info_card {
+    top: 50px !important;
+}
+
 
 /* VAULT */
 
@@ -549,6 +561,18 @@ footer {
     width: 800px;
     margin: 0 auto;
     margin-top: 40px;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .vault__searchbox {
@@ -1409,7 +1433,7 @@ footer {
     }
 }
 
-@media (max-height: 768px) {
+@media (max-height: 769px) {
     .first_cube,
     .second_cube {
         height: 200px;
@@ -1533,6 +1557,9 @@ footer {
     }
     .partners__slider_nav {
         top: 50px;
+    }
+    footer {
+        padding-top: 100px;
     }
 }
 
@@ -1929,6 +1956,10 @@ footer {
         font-size: 16px;
         margin-left: 20px;
     }
+    .swiper-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+    }
     .values__logo_bottom {
         cursor: pointer;
         width: 60%;
@@ -1993,9 +2024,96 @@ footer {
     .homepage__wrapper {
         display: block;
     }
+    .footer__title {
+        display: none;
+    }
+    footer .header__logo {
+        transform: scale(.8);
+        left: 0px;
+    }
+    .header__logo {
+        transform: scale(.8);
+        left: 10px;
+    }
+    .footer {
+        background: black;
+    }
+    .footer_form_block {
+        display: block;
+        margin-top: 20px;
+    }
+    .footer_form_block input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #message {
+        margin-top: 20px;
+    }
+    .services__about {
+        height: 800px;
+    }
+    .swiper {
+        width: 600px;
+        height: 300px;
+    }
+    .swiper-wrapper {
+        display: flex;
+    }
+    .swiper-vertical>.swiper-wrapper {
+        flex-direction: unset;
+    }
+    .toggle-button {
+        height: 300px;
+        min-width: 100%;
+    }
+    .first_cube {
+        background: #ee28007e;
+    }
+    .first_cube,
+    .second_cube {
+        height: 300px;
+    }
+    .services__card_content {
+        top: 60px;
+    }
+    .services__info_card {
+        padding-left: 40px;
+    }
+    .services__info_title {
+        font-size: 46px;
+    }
+    .services__info_subtitle {
+        font-size: 22px;
+    }
+    .services__info_desc {
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.045em;
+        width: 90%;
+        margin-top: 10px;
+    }
+    .cubeshape {
+        height: 300px;
+    }
+    .swiper-pagination-bullet-active {
+        background: black !important;
+    }
+    .services__info_card {
+        padding-left: 40px;
+    }
+    .services__card_content p {
+        font-size: 32px;
+    }
+    .toggle-button {
+        height: 300px !important;
+    }
+    .partners__company_list {
+        min-height: 600px;
+        margin-bottom: 100px;
+    }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 491px) {
     .about__body_text_mb {
         display: block;
     }
@@ -2035,9 +2153,31 @@ footer {
         right: 20px;
         bottom: 20px;
     }
+    .footer {
+        background: black;
+    }
+    .footer_form_block input::placeholder {
+        font-size: 20px !important;
+    }
+    .footer_form_block {
+        display: block;
+        margin-top: 0px;
+    }
+    .footer__right_title {
+        margin-bottom: 30px;
+    }
+    #message {
+        margin-top: 0px;
+    }
+    #message::placeholder {
+        font-size: 20px;
+    }
+    .services__info_card {
+        padding-left: 10px;
+    }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 431px) {
     #search {
         height: 40px;
     }
@@ -2078,11 +2218,43 @@ footer {
     .header__logo {
         left: 10px;
     }
+    .values__item_title {
+        font-size: 16px;
+    }
+    .values__item_subtitle {
+        line-height: 20px;
+    }
+    .about__body_president {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .about__body_desc {
+        font-size: 18px;
+        line-height: 21px;
+    }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 415px) {
     #search {
         font-size: 18px;
+    }
+    .services__about {
+        margin-top: 100px;
+    }
+    .about__body_president {
+        font-size: 18px;
+    }
+    .about__body_desc {
+        font-size: 16px;
+    }
+    .about__body_text_mb {
+        font-size: 12px;
+    }
+    .values__item_title {
+        font-size: 14px;
+    }
+    .values__item_subtitle {
+        font-size: 12px;
     }
 }
 
