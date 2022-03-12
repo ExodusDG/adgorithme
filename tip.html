@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KattenRadar - Tip</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/jquery-ui.min.css">
+    <link rel="stylesheet" href="style/default_styles.css">
+    <link rel="stylesheet" href="style/inner_styles.css">
+</head>
+
+<body>
+    <!-- STICKY HEADER -->
+    <div class="sticky__container">
+        <div class="header" id="sticky__header">
+            <ul>
+                <li>
+                    <a href="#"> <img src="img/logotype.svg" alt="Logotype"></a>
+                </li>
+                <li>
+                    <ul class="header__menu_list">
+                        <li>
+                            <a href="/home">Home</a>
+                        </li>
+                        <li>
+                            <a href="/searches">Huidige Zoekacties</a>
+                        </li>
+                        <li>
+                            <a href="/about">Over ons</a>
+                        </li>
+                        <li class="lang__wrapper" id="sticky__lang__wrapper">
+                            <div class="header__current_lang">
+                                <div><img class="icon__flag" id="icon__flag_sticky" src="img/icons/flag_dutch.svg" alt="Flag"><span id="language_sticky">NL</span><img class="header__down" src="img/icons/header_down.svg" alt="Down"></div>
+                            </div>
+                            <div class="header__lang">
+                                <div><img class="icon__flag" id="Dutch" src="img/icons/flag_dutch.svg" alt="Flag"> NL
+                                </div>
+                                <div><img class="icon__flag" id="English" src="img/icons/flag_eng.svg" alt="Flag"> EN
+                                </div>
+                                <div><img class="icon__flag" id="Deutsch" src="img/icons/flag_deu.svg" alt="Flag"> DE
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="header__start_search">Zoekactie starten</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- STICKY HEADER END -->
+    <div class="blur__wrapper">
+        <!-- HEADER -->
+        <div class="header default_header">
+            <ul>
+                <li>
+                    <a href="#"> <img src="img/logotype.svg" alt="Logotype"></a>
+                </li>
+                <li>
+                    <ul class="header__menu_list">
+                        <li>
+                            <a href="/home">Home</a>
+                        </li>
+                        <li>
+                            <a href="/searches">Huidige Zoekacties</a>
+                        </li>
+                        <li>
+                            <a href="/about">Over ons</a>
+                        </li>
+                        <li class="lang__wrapper">
+                            <div class="header__current_lang">
+                                <div><img class="icon__flag" id="icon__flag" src="img/icons/flag_dutch.svg" alt="Flag"><span id="language">NL</span><img class="header__down" src="img/icons/header_down.svg" alt="Down"></div>
+                            </div>
+                            <div class="header__lang">
+                                <div><img class="icon__flag" id="Dutch" src="img/icons/flag_dutch.svg" alt="Flag"> NL
+                                </div>
+                                <div><img class="icon__flag" id="English" src="img/icons/flag_eng.svg" alt="Flag"> EN
+                                </div>
+                                <div><img class="icon__flag" id="Deutsch" src="img/icons/flag_deu.svg" alt="Flag"> DE
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="header__start_search">Zoekactie starten</button>
+                </li>
+            </ul>
+        </div>
+        <!-- HEADER END -->
+        <!-- MOBILE HEADER -->
+        <div class="mb__header">
+            <div class="mb__header_top">
+                <img src="img/logotype.svg" alt="Logotype">
+                <div class="mb__header_icons">
+                    <a href="#"><img src="img/icon_facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="img/icon_insta.svg" alt="Instagram"></a>
+                </div>
+                <div class="mb__header_lang">
+                    <img class="mb__header_icon" src="img/icons/flag_dutch.svg" alt="Mobile Lang">
+                    <p><img src="img/icons/down.svg" alt="Mobile Lang Down"></p>
+                </div>
+            </div>
+            <div class="mb__header_menu">
+                <a href="#" class="header__menu_active">Home</a>
+                <a href="#">Huidige Zoekacties</a>
+                <a href="#">Over ons</a>
+            </div>
+            <div class="mb__header_language">
+                <div class="mb__header_block" id="lang_Dutch">
+                    <img src="img/icons/flag_dutch.svg" id="image__Dutch" alt="Lang">
+                    <p>NL</p>
+                </div>
+                <div class="mb__header_block" id="lang_English">
+                    <img src="img/icons/flag_eng.svg" id="image__English" alt="Lang">
+                    <p>EN</p>
+                </div>
+                <div class="mb__header_block" id="lang_Deutsch">
+                    <img src="img/icons/flag_deu.svg" id="image__Deutsch" alt="Lang">
+                    <p>DE</p>
+                </div>
+            </div>
+        </div>
+        <!-- MOBILE HEADER END -->
+
+        <!-- MOBILE STICKY HEADER -->
+        <div class="mb__header mb__header_sticky">
+            <div class="mb__header_top">
+                <img src="img/logotype.svg" alt="Logotype">
+                <div class="mb__header_icons">
+                    <a href="#"><img src="img/icon_facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="img/icon_insta.svg" alt="Instagram"></a>
+                </div>
+                <div class="mb__header_lang">
+                    <img src="img/mb_lang.svg" alt="Mobile Lang">
+                </div>
+            </div>
+            <div class="mb__header_menu">
+                <a href="#">Home</a>
+                <a href="#">Huidige Zoekacties</a>
+                <a href="#">Over ons</a>
+            </div>
+            <button class="mb__sticky_header_button">Meteen zoekactie starten</button>
+        </div>
+        <!-- MOBILE HEADER END -->
+
+        <!-- ТУТ ПИШЕШ КОД -->
+        <section class="tip">
+            <div class="blog__container">
+                <div class="tip_plot">
+                    Tip doorgeven
+                </div>
+                <div class="tip_contents">
+                    <div class="tip_photo">
+                        <img src="img/tip_menu.png" alt="">
+                    </div>
+                    <div class="tip_menu">
+                        <p>Tip</p>
+                        <div><textarea name="tip__message" id="tip__message" placeholder="Verplicht" onchange="checkInput()"></textarea></div>
+                        <p>Locatie</p>
+                        <div class="location__input">
+                            <input class="tip_menu_location" id="tips__location" placeholder="Location" type="text" onchange="checkInput()" readonly>
+                            <div class="location__clear">
+                                <p>x</p>
+                            </div>
+                        </div>
+                        <div class="tip_menu_date">
+                            <div>
+                                <p>Datum</p>
+                                <input type="text" name="data__picker" id="data__picker" readonly onchange="checkInput()" placeholder="MM | DD | JJ">
+                            </div>
+                            <div class="tip__menu_date">
+                                <p>Tijd</p>
+                                <input type="text" name="data__picker" class="time__picker" onchange="checkInput()" id="time__picker" placeholder="UU | UU">
+                                <div class="tip__time" style="display: none;">
+                                    <p class="tip__time_active">pm</p>
+                                    <div class="tip__time_selector">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="10" cy="10" r="9.5" fill="white" stroke="#3F2B4F"/>
+                                            <path d="M14.3295 13.5774L14.3294 13.5775L14.3372 13.5849C14.5543 13.7903 14.5543 14.1294 14.3372 14.3348C14.207 14.458 14.0785 14.5 13.9716 14.5C13.8656 14.5 13.7384 14.4587 13.6094 14.338L10.3513 11.1209L10 10.774L9.64869 11.1209L6.39165 14.337C6.3726 14.3541 6.32346 14.3888 6.24813 14.4194C6.17192 14.4504 6.09414 14.4667 6.02843 14.4667C5.96271 14.4667 5.88493 14.4504 5.80872 14.4194C5.73002 14.3875 5.67992 14.351 5.66283 14.3348L5.32063 14.6964L5.66283 14.3348C5.44572 14.1294 5.44572 13.7903 5.66283 13.5849L5.6629 13.5849L5.6705 13.5774L8.93281 10.3558L9.29308 9.99998L8.93279 9.64422L5.67048 6.42287L5.67056 6.42279L5.66283 6.41548C5.44572 6.21004 5.44572 5.87062 5.66283 5.66519C5.793 5.54201 5.92147 5.5 6.02843 5.5C6.13445 5.5 6.26159 5.54127 6.39059 5.66196L9.64867 8.87945L10 9.2264L10.3513 8.87945L13.6094 5.66196C13.7384 5.54127 13.8656 5.5 13.9716 5.5C14.0785 5.5 14.207 5.54201 14.3372 5.66519C14.5543 5.87063 14.5543 6.21004 14.3372 6.41548L14.3371 6.41539L14.3295 6.42287L11.0672 9.64422L10.7069 9.99998L11.0672 10.3558L14.3295 13.5774Z" fill="#3F2B4F" stroke="#3F2B4F"/>
+                                            </svg>
+                                        <div class="tip_time_wrapper">
+                                            <div class="tip_time_active_number">01:00</div>
+                                            <div>02:00</div>
+                                            <div>03:00</div>
+                                            <div>04:00</div>
+                                            <div>05:00</div>
+                                            <div>06:00</div>
+                                            <div>07:00</div>
+                                            <div>08:00</div>
+                                            <div>09:00</div>
+                                            <div>10:00</div>
+                                            <div>11:00</div>
+                                            <div>12:00</div>
+                                        </div>
+                                    </div>
+                                    <p>am</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Contactgegevens</p>
+                        <input class="tip_menu_location" id="tip__contact" placeholder="Optioneel" type="text">
+                        <button class="tip__send_button" disabled>Stuur tip!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer>
+            <div class="container">
+                <div class="footer__info">
+                    <img src="img/footer_logo.svg" alt="Footer Logo">
+                    <div class="footer__info_adress">
+                        <div>
+                            <img src="img/icons/email.svg" alt="email">
+                            <span><a href="mailto:info@kattenradar.nl" class="phone">info@kattenradar.nl</a></span>
+                        </div>
+                        <div>
+                            <img src="img/icons/phone.svg" alt="phone">
+                            <span><a class="phone" href="tel:+31627655321">+31 6 276 553 21</a></span>
+                        </div>
+                    </div>
+                    <div class="footer__info_adress">
+                        <div>
+                            <img src="img/icons/map_footer.svg" alt="map">
+                            <span>Amsterdam, Victorieplein 27a1, 1079 KM</span>
+                        </div>
+                        <div>
+                            <img src="img/icons/bag.svg" alt="bag">
+                            <span>KvK-nummer: 71505083</span>
+                        </div>
+                    </div>
+                    <div class="footer__info_links">
+                        <p class="footer_dashboard">Naar dashboard</p>
+                        <p class="footer_contact" href="#">Neem contact met ons op</p>
+                        <a href="#">KattenRadar Blog</a>
+                    </div>
+                </div>
+                <div class="footer_links">
+                    <a href="#">Terms of service</a>
+                    <a href="#">Privacy policy</a>
+                </div>
+                <p class="footer_bottom_text">© kattenradar, Inc. 2021. We love our users!</p>
+            </div>
+        </footer>
+        <!-- MOBILE FOOTER -->
+        <div class="mb_footer">
+            <div class="mb__footer_header">
+                <a href="#">Contact opnemen</a>
+                <a href="#">Naar dashboard</a>
+            </div>
+            <div class="mb__footer_info">
+                <div class="footer__info_adress">
+                    <div>
+                        <img src="img/icons/email.svg" alt="email">
+                        <span><a href="mailto:info@kattenradar.nl" class="phone">info@kattenradar.nl</a></span>
+                    </div>
+                    <div>
+                        <img src="img/icons/phone.svg" alt="phone">
+                        <span><a class="phone" href="tel:+31627655321">+31 6 276 553 21</a></span>
+                    </div>
+                </div>
+                <div class="footer__info_adress">
+                    <div>
+                        <img src="img/icons/map_footer.svg" alt="map">
+                        <span>Amsterdam, Victorieplein 27a1, 1079 KM</span>
+                    </div>
+                    <div>
+                        <img src="img/icons/bag.svg" alt="bag">
+                        <span>KvK-nummer: 71505083</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mb__footer_foot">
+                <a href="#">Privacy policy</a>
+                <a href="#">Blog</a>
+                <a href="#">Terms of service</a>
+            </div>
+            <hr class="mb__footer_line">
+            <p class="mb__footer_text">© kattenradar, Inc. 2021. We love our users!</p>
+        </div>
+    </div>
+    <!-- FEEDBACK -->
+    <div class="feedback">
+    </div>
+    <div class="feedback__popup">
+        <div class="feedback_close">
+            <img class="popup_close" src="img/homepage/close.svg" alt="Close">
+        </div>
+        <p>Neem contact op</p>
+        <div class="feedback__form">
+            <div class="feedback__form_block">
+                <p>Email <span> *</span></p>
+                <input type="email" id="form__email" placeholder="Email">
+            </div>
+            <div class="feedback__form_block">
+                <p>Telefoon</p>
+                <input type="phone" id="form__phone" placeholder="Telefoonnummer (optioneel)">
+            </div>
+        </div>
+        <div class="feedback__textarea">
+            <p>Bericht</p>
+            <textarea name="message" id="message"></textarea>
+        </div>
+        <input type="hidden" name="token" value="" id="token">
+        <p class="form__send_status">Your message has been successfully sent!</p>
+        <button class="feedback__send" class="g-recaptcha" data-sitekey="6LdBDO4dAAAAAHksjb-qcwb7j-Ke3cEJwkBgIF4C" data-callback='onSubmit' data-action='submitForm'>Versturen</button>
+        <p class="feedback__capcha_info">This site is protected by reCAPTCHA and the Google
+            <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+            <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+        </p>
+    </div>
+    <!-- DASHBOARD POPUP -->
+    <div class="dashboard__popup">
+        <div class="feedback_close">
+            <img class="popup_close" src="img/homepage/close.svg" alt="Close">
+        </div>
+        <div class="dashboard__popup_start">
+            <p class="dashboard__title">To dashboard</p>
+            <p class="dashboard__desc">Je kunt het dashboard van de zoekactie openen door op 'naar dashboard' te klikken in de emails van KattenRadar.</p>
+            <p class="dashboard__desc" style="opacity: 0.6;">Kan je het niet vinden? Vul hier je email of telefoonnummer in, en wij sturen je de link nogmaals toe.</p>
+
+            <input type="email" name="email" id="dashboardEmail" placeholder="Email of telefoonnummer">
+            <button id="dashboard__send">Ontvang link naar dashboard</button>
+        </div>
+        <div class="dashboard__popup_done" style="display: none;">
+            <p class="dashboard__title">Success!</p>
+            <p class="dashboard__desc">We hebben je de nieuwe link gestuurd, check je e-mail</p>
+            <button class="dashboard__top_button">Naar startpagina</button>
+        </div>
+
+        <div class="dashboard__popup_failed" style="display: none;">
+            <p class="dashboard__title">Failed!</p>
+            <p class="dashboard__desc">Deze e-mail heeft geen gekoppelde zoekopdrachten.</p>
+            <button id="dashboard__failed_repeat">Probeer het opnieuw</button>
+            <button class="dashboard__button dashboard__top_button">Naar startpagina</button>
+        </div>
+    </div>
+    <!-- TIPS MAP -->
+
+    <div class="tips__map">
+        <div class="tips__map_close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.138 13.5104L15.1379 13.5105L15.1457 13.5179C15.6181 13.9649 15.6181 14.7066 15.1457 15.1536C14.8878 15.3976 14.6104 15.5 14.3545 15.5C14.0998 15.5 13.8238 15.3985 13.567 15.157L8.35131 10.0068L8 9.65994L7.64869 10.0068L2.43342 15.1566C2.29382 15.2864 1.96424 15.4467 1.64548 15.4467C1.32425 15.4467 0.992028 15.2839 0.854326 15.1536C0.381891 14.7066 0.381891 13.9649 0.854326 13.5179L0.854404 13.5179L0.861997 13.5104L6.0817 8.35576L6.44197 7.99998L6.08168 7.64422L0.861979 2.49007L0.862059 2.48999L0.854326 2.48267C0.381891 2.03562 0.381891 1.29344 0.854326 0.846399C1.11217 0.602412 1.38958 0.5 1.64548 0.5C1.90019 0.5 2.1762 0.601457 2.43302 0.842987L7.64867 5.99366L8 6.34061L8.35133 5.99366L13.567 0.842977C13.8238 0.601454 14.0998 0.5 14.3545 0.5C14.6104 0.5 14.8878 0.602412 15.1457 0.846399C15.6181 1.29344 15.6181 2.03562 15.1457 2.48267L15.1456 2.48259L15.138 2.49007L9.91832 7.64422L9.55803 7.99998L9.9183 8.35576L15.138 13.5104Z" fill="#3F2B4F" stroke="#3F2B4F"/>
+            </svg>
+        </div>
+        <div class="tips__map_container" id="tips__map_container"></div>
+        <div class="search__map_form">
+            <div>
+                <img src="img/icons/map.svg" alt="map">
+                <input id="location" type="text" class="search__map_adress" placeholder="Typ hier uw adres">
+                <!-- HIDDEN GOOGLE FORMS -->
+                <input type="hidden" placeholder="Apt, Suite, etc (optional)" />
+                <input type="hidden" placeholder="City" id="locality" />
+                <div class="half-input-container">
+                    <input type="hidden" class="half-input" placeholder="State/Province" id="administrative_area_level_1" />
+                    <input type="hidden" class="half-input" placeholder="Zip/Postal code" id="postal_code" />
+                </div>
+                <input type="hidden" placeholder="Country" id="country" />
+                <!-- END -->
+            </div>
+            <button class="search__map_button" id="map__button_top">Hier zoeken <img
+                    class="search__button_arrow" src="img/icons/arrow_right.svg"
+                    alt="right"></button>
+        </div>
+    </div>
+
+    <!-- TIP STATUS -->
+
+    <div class="tip_status">
+        <div class="tips__map_close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.138 13.5104L15.1379 13.5105L15.1457 13.5179C15.6181 13.9649 15.6181 14.7066 15.1457 15.1536C14.8878 15.3976 14.6104 15.5 14.3545 15.5C14.0998 15.5 13.8238 15.3985 13.567 15.157L8.35131 10.0068L8 9.65994L7.64869 10.0068L2.43342 15.1566C2.29382 15.2864 1.96424 15.4467 1.64548 15.4467C1.32425 15.4467 0.992028 15.2839 0.854326 15.1536C0.381891 14.7066 0.381891 13.9649 0.854326 13.5179L0.854404 13.5179L0.861997 13.5104L6.0817 8.35576L6.44197 7.99998L6.08168 7.64422L0.861979 2.49007L0.862059 2.48999L0.854326 2.48267C0.381891 2.03562 0.381891 1.29344 0.854326 0.846399C1.11217 0.602412 1.38958 0.5 1.64548 0.5C1.90019 0.5 2.1762 0.601457 2.43302 0.842987L7.64867 5.99366L8 6.34061L8.35133 5.99366L13.567 0.842977C13.8238 0.601454 14.0998 0.5 14.3545 0.5C14.6104 0.5 14.8878 0.602412 15.1457 0.846399C15.6181 1.29344 15.6181 2.03562 15.1457 2.48267L15.1456 2.48259L15.138 2.49007L9.91832 7.64422L9.55803 7.99998L9.9183 8.35576L15.138 13.5104Z" fill="#3F2B4F" stroke="#3F2B4F"/>
+            </svg>
+        </div>
+        <div class="tip__status_content">
+            <div class="tip_done" style="display: none;">
+                <p class="tip__status">Success</p>
+                <p class="tip__desc">Je tip is verstuurd naar de eigenaar blablabla heel erg lief we waarderen je hulp.</p>
+                <a href="index.html"><button>Ga door</button></a>
+            </div>
+            <div class="tip_error">
+                <p class="tip__status">Failed</p>
+                <p class="tip__desc">Deze e-mail heeft geen gekoppelde zoekopdrachten. Probeer het nog eens of neem contact op met <a href="mailto:info@kattenradar.com">info@kattenradar.com</a> of <a href="tel:+31627655321">+31627655321</a>.</p>
+                <a href="index.html"><button>Ga door</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFA6udGwPSgJt_QacZp9tatCTazR32t2U&libraries=places&callback=initMap&solution_channel=GMP_QB_addressselection_v1_cABC" async defer></script>
+    <script src="js/default_script.js"></script>
+    <script src="js/tips_script.js"></script>
+</body>
+
+</html>
